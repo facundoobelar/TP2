@@ -54,7 +54,7 @@ namespace ejerc4
         }
         public bool EsIgual(double pReal, double pImaginario)
         {
-            return((this.Real==pReal)&&(this.Imaginario==pImaginario));
+            return((this.iReal==pReal)&&(this.iImaginario==pImaginario));
         }
         public Complejo Sumar(Complejo pOtroComplejo)
         {
@@ -69,8 +69,8 @@ namespace ejerc4
             return(new Complejo((this.Real*pOtroComplejo.Real)-(this.Imaginario*pOtroComplejo.Imaginario),(this.Real*pOtroComplejo.Imaginario)+(this.Imaginario*pOtroComplejo.Real))); 
         }
         public Complejo DividirPor(Complejo pOtroComplejo)
-        { double cociente = (Math.Pow(pOtroComplejo.Real, 2) + Math.Pow(pOtroComplejo.Imaginario, 2));
-            return(new Complejo(((this.Real*pOtroComplejo.Real)+(this.Imaginario*pOtroComplejo.Imaginario)/cociente),((this.Imaginario*pOtroComplejo.Real)-(this.Real*pOtroComplejo.Imaginario))/cociente));
+        { double cociente = (Math.Pow(pOtroComplejo.Real, 2)) + (Math.Pow(pOtroComplejo.Imaginario, 2));
+            return(new Complejo((((this.Real*pOtroComplejo.Real)+(this.Imaginario*pOtroComplejo.Imaginario))/cociente), ((this.Imaginario*pOtroComplejo.Real)-(this.Real*pOtroComplejo.Imaginario))/cociente));
         }
     }
 }

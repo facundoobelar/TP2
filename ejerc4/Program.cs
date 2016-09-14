@@ -10,7 +10,7 @@ namespace ejerc4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hola");
+          //  Console.WriteLine("hola");
         }
     }
 }
